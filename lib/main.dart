@@ -147,13 +147,13 @@ class _SnakeGamePageState extends State<SnakeGamePage> {
                       itemBuilder: (context, index) {
                         if (snake.snakePosition.contains(index)) {
                           if (index == snake.snakePosition.last){
-                            return GameUnit(index: index, bodyColor: Colors.amber);
+                            return const GameUnit(bodyColor: Colors.amber);
                           }
-                          return GameUnit(index: index, bodyColor: Colors.amberAccent);
+                          return const GameUnit(bodyColor: Colors.amberAccent);
                         } else if (index == food.foodPosition) {
-                          return GameUnit(index: index, bodyColor: Colors.greenAccent);
+                          return const GameUnit(bodyColor: Colors.greenAccent);
                         } else {
-                          return GameUnit(index: index);
+                          return const GameUnit();
                         }
                       }
                   ),
@@ -171,9 +171,8 @@ class _SnakeGamePageState extends State<SnakeGamePage> {
 
 class GameUnit extends StatefulWidget {
   // int? index;
-  final int index;
   final Color? bodyColor;
-  const GameUnit({super.key, required this.index, this.bodyColor = Colors.grey});
+  const GameUnit({super.key, this.bodyColor = Colors.grey});
 
   @override
   State<GameUnit> createState() => _GameUnitState();
@@ -188,11 +187,6 @@ class _GameUnitState extends State<GameUnit> {
         decoration: BoxDecoration(
             color: widget.bodyColor,
             borderRadius: const BorderRadius.all(Radius.circular(6.0))),
-        // child: Center(
-        //     child: Text(
-        //   // '${widget.index}',
-        //   // style: const TextStyle(color: Colors.white),
-        // )),
       ),
     );
   }
