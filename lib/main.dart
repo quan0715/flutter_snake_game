@@ -40,7 +40,7 @@ class _SnakeGamePageState extends State<SnakeGamePage> {
   Timer clock = Timer(const Duration(milliseconds: 150), () { });
   void startGame() {
     gameStatus = Status.start;
-    clock = Timer.periodic(const Duration(milliseconds: 200), (timer) {
+    clock = Timer.periodic(const Duration(milliseconds: 150), (timer) {
       setState(() {
         bool eatenFood = snake.snakeMove(foodPosition: food.foodPosition);
         if (eatenFood){
