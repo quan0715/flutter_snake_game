@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
 options: "e4f9605b328552cae5ce2c6b84b8fddcf99c35e6a406b00aa36b36346987b1bb"
-build_start_time: [1675003825, 163975000]
-build_end_time: [1675003858, 708117008]
+build_start_time: [1675095496, 646098136]
+build_end_time: [1675095502, 57376861]
 inputs:
-  "/Users/apple/StudioProjects/snake_game/macos/Flutter/GeneratedPluginRegistrant.swift": [1675003811, 209667921]
+  "/Users/apple/StudioProjects/snake_game/macos/Flutter/GeneratedPluginRegistrant.swift": [1675095468, 20511150]
   "/Users/apple/StudioProjects/snake_game/macos/Runner/AppDelegate.swift": [1653017493, 0]
   "/Users/apple/StudioProjects/snake_game/macos/Runner/MainFlutterWindow.swift": [1653017493, 0]
